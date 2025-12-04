@@ -1,0 +1,178 @@
+2025-12-03 22:05:43,427 [INFO] Initialized BasicBot for Binance Futures Testnet
+2025-12-03 22:11:32,113 [INFO] Placing MARKET order: symbol=BTCUSDT side=BUY qty=0.002
+2025-12-03 22:11:32,935 [ERROR] Error placing market order: APIError(code=-1021): Timestamp for this request was 1000ms ahead of the server's time.
+Traceback (most recent call last):
+  File "C:\Users\munih\Downloads\simple_binance_bot\bot.py", line 52, in place_market_order
+    order = self.client.futures_create_order(
+        symbol=symbol,
+    ...<2 lines>...
+        quantity=quantity,
+    )
+  File "C:\Users\munih\Downloads\simple_binance_bot\venv\Lib\site-packages\binance\client.py", line 7782, in futures_create_order
+    return self._request_futures_api("post", "order", True, data=params)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\munih\Downloads\simple_binance_bot\venv\Lib\site-packages\binance\client.py", line 128, in _request_futures_api
+    return self._request(method, uri, signed, force_params, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\munih\Downloads\simple_binance_bot\venv\Lib\site-packages\binance\client.py", line 91, in _request
+    return self._handle_response(self.response)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\munih\Downloads\simple_binance_bot\venv\Lib\site-packages\binance\client.py", line 100, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-1021): Timestamp for this request was 1000ms ahead of the server's time.
+2025-12-03 22:11:32,940 [ERROR] Order failed: APIError(code=-1021): Timestamp for this request was 1000ms ahead of the server's time.
+Traceback (most recent call last):
+  File "C:\Users\munih\Downloads\simple_binance_bot\bot.py", line 144, in main
+    order = bot.place_market_order(symbol, side, quantity)
+  File "C:\Users\munih\Downloads\simple_binance_bot\bot.py", line 52, in place_market_order
+    order = self.client.futures_create_order(
+        symbol=symbol,
+    ...<2 lines>...
+        quantity=quantity,
+    )
+  File "C:\Users\munih\Downloads\simple_binance_bot\venv\Lib\site-packages\binance\client.py", line 7782, in futures_create_order
+    return self._request_futures_api("post", "order", True, data=params)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\munih\Downloads\simple_binance_bot\venv\Lib\site-packages\binance\client.py", line 128, in _request_futures_api
+    return self._request(method, uri, signed, force_params, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\munih\Downloads\simple_binance_bot\venv\Lib\site-packages\binance\client.py", line 91, in _request
+    return self._handle_response(self.response)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\munih\Downloads\simple_binance_bot\venv\Lib\site-packages\binance\client.py", line 100, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-1021): Timestamp for this request was 1000ms ahead of the server's time.
+2025-12-03 22:17:39,200 [INFO] Initialized BasicBot for Binance Futures Testnet
+2025-12-03 22:18:05,640 [INFO] Placing MARKET order: symbol=BITCUSDT side=BUY qty=0.001
+2025-12-03 22:18:06,587 [ERROR] Error placing market order: APIError(code=-1021): Timestamp for this request was 1000ms ahead of the server's time.
+Traceback (most recent call last):
+  File "C:\Users\munih\Downloads\simple_binance_bot\BOT.PY", line 52, in place_market_order
+    order = self.client.futures_create_order(
+        symbol=symbol,
+    ...<2 lines>...
+        quantity=quantity,
+    )
+  File "C:\Users\munih\Downloads\simple_binance_bot\venv\Lib\site-packages\binance\client.py", line 7782, in futures_create_order
+    return self._request_futures_api("post", "order", True, data=params)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\munih\Downloads\simple_binance_bot\venv\Lib\site-packages\binance\client.py", line 128, in _request_futures_api
+    return self._request(method, uri, signed, force_params, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\munih\Downloads\simple_binance_bot\venv\Lib\site-packages\binance\client.py", line 91, in _request
+    return self._handle_response(self.response)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\munih\Downloads\simple_binance_bot\venv\Lib\site-packages\binance\client.py", line 100, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-1021): Timestamp for this request was 1000ms ahead of the server's time.
+2025-12-03 22:18:06,591 [ERROR] Order failed: APIError(code=-1021): Timestamp for this request was 1000ms ahead of the server's time.
+Traceback (most recent call last):
+  File "C:\Users\munih\Downloads\simple_binance_bot\BOT.PY", line 144, in main
+    order = bot.place_market_order(symbol, side, quantity)
+  File "C:\Users\munih\Downloads\simple_binance_bot\BOT.PY", line 52, in place_market_order
+    order = self.client.futures_create_order(
+        symbol=symbol,
+    ...<2 lines>...
+        quantity=quantity,
+    )
+  File "C:\Users\munih\Downloads\simple_binance_bot\venv\Lib\site-packages\binance\client.py", line 7782, in futures_create_order
+    return self._request_futures_api("post", "order", True, data=params)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\munih\Downloads\simple_binance_bot\venv\Lib\site-packages\binance\client.py", line 128, in _request_futures_api
+    return self._request(method, uri, signed, force_params, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\munih\Downloads\simple_binance_bot\venv\Lib\site-packages\binance\client.py", line 91, in _request
+    return self._handle_response(self.response)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\munih\Downloads\simple_binance_bot\venv\Lib\site-packages\binance\client.py", line 100, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-1021): Timestamp for this request was 1000ms ahead of the server's time.
+2025-12-03 22:21:12,413 [INFO] Initialized BasicBot for Binance Futures Testnet
+2025-12-03 22:21:13,136 [INFO] Time synced. Server: 1764780656233, Local: 1764780673136, Offset: -16903 ms
+2025-12-03 22:21:49,112 [INFO] Placing MARKET order: symbol=BTCUSDT side=BUY qty=0.001
+2025-12-03 22:21:49,283 [ERROR] Error placing market order: APIError(code=-1021): Timestamp for this request was 1000ms ahead of the server's time.
+Traceback (most recent call last):
+  File "C:\Users\munih\Downloads\simple_binance_bot\BOT.PY", line 69, in place_market_order
+    order = self.client.futures_create_order(
+        symbol=symbol,
+    ...<3 lines>...
+        recvWindow=60000,  # allow up to 60s drift
+    )
+  File "C:\Users\munih\Downloads\simple_binance_bot\venv\Lib\site-packages\binance\client.py", line 7782, in futures_create_order
+    return self._request_futures_api("post", "order", True, data=params)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\munih\Downloads\simple_binance_bot\venv\Lib\site-packages\binance\client.py", line 128, in _request_futures_api
+    return self._request(method, uri, signed, force_params, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\munih\Downloads\simple_binance_bot\venv\Lib\site-packages\binance\client.py", line 91, in _request
+    return self._handle_response(self.response)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\munih\Downloads\simple_binance_bot\venv\Lib\site-packages\binance\client.py", line 100, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-1021): Timestamp for this request was 1000ms ahead of the server's time.
+2025-12-03 22:21:49,288 [ERROR] Order failed: APIError(code=-1021): Timestamp for this request was 1000ms ahead of the server's time.
+Traceback (most recent call last):
+  File "C:\Users\munih\Downloads\simple_binance_bot\BOT.PY", line 163, in main
+    order = bot.place_market_order(symbol, side, quantity)
+  File "C:\Users\munih\Downloads\simple_binance_bot\BOT.PY", line 69, in place_market_order
+    order = self.client.futures_create_order(
+        symbol=symbol,
+    ...<3 lines>...
+        recvWindow=60000,  # allow up to 60s drift
+    )
+  File "C:\Users\munih\Downloads\simple_binance_bot\venv\Lib\site-packages\binance\client.py", line 7782, in futures_create_order
+    return self._request_futures_api("post", "order", True, data=params)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\munih\Downloads\simple_binance_bot\venv\Lib\site-packages\binance\client.py", line 128, in _request_futures_api
+    return self._request(method, uri, signed, force_params, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\munih\Downloads\simple_binance_bot\venv\Lib\site-packages\binance\client.py", line 91, in _request
+    return self._handle_response(self.response)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\munih\Downloads\simple_binance_bot\venv\Lib\site-packages\binance\client.py", line 100, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-1021): Timestamp for this request was 1000ms ahead of the server's time.
+2025-12-04 06:22:58,719 [INFO] Initialized BasicBot for Binance Futures Testnet
+2025-12-04 06:22:59,732 [INFO] Time synced. Server: 1764809563056, Local: 1764809579732, Offset: -16676 ms
+2025-12-04 06:23:21,493 [INFO] Placing MARKET order: symbol=BTCUSDT side=BUY qty=0.01
+2025-12-04 06:23:21,617 [ERROR] Error placing market order: APIError(code=-1021): Timestamp for this request was 1000ms ahead of the server's time.
+Traceback (most recent call last):
+  File "C:\Users\munih\Downloads\simple_binance_bot\bot.py", line 69, in place_market_order
+    order = self.client.futures_create_order(
+        symbol=symbol,
+    ...<3 lines>...
+        recvWindow=60000,  # allow up to 60s drift
+    )
+  File "C:\Users\munih\AppData\Roaming\Python\Python314\site-packages\binance\client.py", line 7782, in futures_create_order
+    return self._request_futures_api("post", "order", True, data=params)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\munih\AppData\Roaming\Python\Python314\site-packages\binance\client.py", line 128, in _request_futures_api
+    return self._request(method, uri, signed, force_params, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\munih\AppData\Roaming\Python\Python314\site-packages\binance\client.py", line 91, in _request
+    return self._handle_response(self.response)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\munih\AppData\Roaming\Python\Python314\site-packages\binance\client.py", line 100, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-1021): Timestamp for this request was 1000ms ahead of the server's time.
+2025-12-04 06:23:21,626 [ERROR] Order failed: APIError(code=-1021): Timestamp for this request was 1000ms ahead of the server's time.
+Traceback (most recent call last):
+  File "C:\Users\munih\Downloads\simple_binance_bot\bot.py", line 163, in main
+    order = bot.place_market_order(symbol, side, quantity)
+  File "C:\Users\munih\Downloads\simple_binance_bot\bot.py", line 69, in place_market_order
+    order = self.client.futures_create_order(
+        symbol=symbol,
+    ...<3 lines>...
+        recvWindow=60000,  # allow up to 60s drift
+    )
+  File "C:\Users\munih\AppData\Roaming\Python\Python314\site-packages\binance\client.py", line 7782, in futures_create_order
+    return self._request_futures_api("post", "order", True, data=params)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\munih\AppData\Roaming\Python\Python314\site-packages\binance\client.py", line 128, in _request_futures_api
+    return self._request(method, uri, signed, force_params, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\munih\AppData\Roaming\Python\Python314\site-packages\binance\client.py", line 91, in _request
+    return self._handle_response(self.response)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\munih\AppData\Roaming\Python\Python314\site-packages\binance\client.py", line 100, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-1021): Timestamp for this request was 1000ms ahead of the server's time.
